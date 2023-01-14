@@ -1,5 +1,5 @@
 import json
-#Регистрация пользователя с проверкой наличия логина в базе
+# Регистрация пользователя с проверкой наличия логина в базе
 def register(login, passwd):
     with open('users.json', 'r') as file:
         users = json.load(file)
@@ -11,7 +11,7 @@ def register(login, passwd):
         print('Такой логин уже существует')
         register(input('Введите логин: '), input('Введите пароль: '))
 
-#Логин
+# Логин
 def check(login, passwd):
     with open('users.json', 'r') as file:
         users = json.load(file)
