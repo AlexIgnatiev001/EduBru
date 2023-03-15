@@ -34,6 +34,7 @@ class StudentCourses(BaseModel):
     class Meta:
         db_table = 'Student_courses'
 
+
 # Функция для создания словаря и добавления в таблицу через insert_many
 def dictfill(keys, values):
     lst = []
